@@ -9,9 +9,15 @@ export default reactRenderer(({ children, title }) => {
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
         {import.meta.env.PROD ? (
-          <script type="module" src="/static/client.js" />
+          <>
+            <script type="module" src="/static/client.js" />
+            <link href="/static/assets/style.css" rel="stylesheet" />
+          </>
         ) : (
-          <script type="module" src="/app/client.ts" />
+          <>
+            <script type="module" src="/app/client.ts" />
+            <link href="/app/style.css" rel="stylesheet" />
+          </>
         )}
       </head>
       <body>{children}</body>

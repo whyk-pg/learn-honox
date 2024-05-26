@@ -4,8 +4,8 @@ import Counter from "../islands/counter";
 export default createRoute((c) => {
   const name = c.req.query("name") ?? "Hono";
   return c.render(
-    <div>
-      <h1>Hello, {name}!</h1>
+    <div className="font-serif">
+      <h1 className="text-3xl font-bold">Hello, {name}!</h1>
       <Counter />
     </div>,
     { title: name },
