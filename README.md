@@ -5,7 +5,7 @@ Honoから出たメタフレームワークHonoXに、Flowbite React環境が移
 
 ## 本リポジトリの達成目標
 - [x] HonoXのプロジェクトを立ち上げる
-- [ ] レンダラをReactに変更する
+- [x] レンダラをReactに変更する
 - [ ] Tailwind CSSを導入する
 - [ ] Flowbiteを導入する
 - [ ] レンダラを`preact/compat`に変更する

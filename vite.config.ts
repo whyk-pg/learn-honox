@@ -7,10 +7,21 @@ import { defineConfig } from "vite";
 export default defineConfig(({ mode }) => {
   if (mode === "client") {
     return {
-      plugins: [client()],
+      plugins: [client({ jsxImportSource: "react" })],
+      build: {
+        rollupOptions: {
+          input: ["./app/client.ts"],
+          output: {
+            entryFileNames: "static/client.js",
+            chunkFileNames: "static/assets/[name]-[hash].js",
+            assetFileNames: "static/assets/[name].[ext]",
+          },
+        },
+      },
     };
   }
   return {
+    ssr: { external: ["react", "react-dom"] },
     plugins: [
       honox({
         devServer: {
