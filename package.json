@@ -9,6 +9,7 @@
     "deploy": "$npm_execpath run build && wrangler pages deploy",
     "check": "biome check --apply-unsafe ."
   },
+  "packageManager": "pnpm@9.5.0",
   "dependencies": {
     "@hono/react-renderer": "^0.2.0",
     "hono": "^4.3.11",
