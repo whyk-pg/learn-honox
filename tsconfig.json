@@ -6,8 +6,14 @@
     "strict": true,
     "skipLibCheck": true,
     "lib": ["ESNext", "DOM"],
-    "types": ["vite/client", "@cloudflare/workers-types"],
+    "types": ["vite/client", "@cloudflare/workers-types", "hono"],
     "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    "jsxImportSource": "hono/jsx/dom",
+    "paths": {
+      "react": ["hono/jsx/dom"],
+      "react-dom": ["hono/jsx/dom"],
+      "@/*": ["./*"],
+    },
+    "baseUrl": "."
   }
 }
