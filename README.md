@@ -8,7 +8,7 @@ Honoから出たメタフレームワークHonoXでReact環境を構築するた
 - [x] レンダラをReactに変更する
 - [x] Tailwind CSSを導入する
 - [x] 最新のHonoXに更新する
-- [ ] 最新のHonoXのレンダラをReactに変更する
+- [x] 最新のHonoXのレンダラをReactに変更する
 - [ ] Ark UIを導入する
 - [ ] Panda CSSを導入する
 
