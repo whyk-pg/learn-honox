@@ -11,6 +11,7 @@
   },
   "packageManager": "pnpm@9.15.0",
   "dependencies": {
+    "@ark-ui/react": "^4.9.2",
     "@hono/react-renderer": "^0.3.0",
     "hono": "^4.7.2",
     "honox": "^0.1.38",
