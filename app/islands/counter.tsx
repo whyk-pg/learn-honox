@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useState } from "hono/jsx";
 
 export default function Counter() {
   const [count, setCount] = useState(0);
   return (
-    <div className="mt-5">
-      <p>{count}</p>
+    <div>
+      <p class="py-2 text-2xl">{count}</p>
       <button
-        className="border border-slate-500 rounded mt-2 py-1 px-2 hover:bg-slate-500 hover:text-slate-50"
+        class="px-4 py-2 bg-orange-400 text-white rounded cursor-pointer"
         type="button"
         onClick={() => setCount(count + 1)}
       >
