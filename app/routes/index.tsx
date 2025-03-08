@@ -1,6 +1,7 @@
-import { QrCode } from "@ark-ui/react/qr-code";
 import { createRoute } from "honox/factory";
+import {Accordion} from "../islands/accordion";
 import Counter from "../islands/counter";
+import QrCode from "../islands/qrcode";
 
 export default createRoute((c) => {
   const name = c.req.query("name") ?? "Hono";
@@ -9,14 +10,8 @@ export default createRoute((c) => {
       <title>{name}</title>
       <h1 className="text-3xl font-bold">Hello, {name}!</h1>
       <Counter />
-
-      <div className="w-md">
-        <QrCode.Root defaultValue="http://ark-ui.com">
-          <QrCode.Frame>
-            <QrCode.Pattern />
-          </QrCode.Frame>
-        </QrCode.Root>
-      </div>
+      <QrCode />
+      <Accordion />
     </div>,
   );
 });
