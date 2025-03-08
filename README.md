@@ -12,7 +12,6 @@ Honoから出たメタフレームワークHonoXでReact環境を構築するた
 - [x] Ark UIを導入する
   - [ ] ~~`@ark-ui/react/qr-code`を使ってQRコードをダウンロードさせる~~
   - [ ] ~~`@ark-ui/react/accordion`を使って折り畳み要素を追加する~~
-- [ ] Panda CSSを導入する
 
 ### エラーについて
 #### Ark UIのHydration mismatch
